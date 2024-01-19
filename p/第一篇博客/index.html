@@ -1,0 +1,227 @@
+<!doctype html><html lang=zh-cn dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="A brief description of Hugo Shortcodes"><title>第一篇博客</title><link rel=canonical href=https://example.com/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/><link rel=stylesheet href=/scss/style.min.f7936e9c14e7dbfd55c6950fb70d674f752e8051204776537963692b2de11235.css><meta property="og:title" content="第一篇博客"><meta property="og:description" content="A brief description of Hugo Shortcodes"><meta property="og:url" content="https://example.com/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"><meta property="og:site_name" content="LivenBom's Blog"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="shortcodes"><meta property="article:tag" content="privacy"><meta property="article:published_time" content="2024-01-18T14:54:29+08:00"><meta property="article:modified_time" content="2024-01-18T14:54:29+08:00"><meta name=twitter:title content="第一篇博客"><meta name=twitter:description content="A brief description of Hugo Shortcodes"><link rel="shortcut icon" href=/img/favicon.ico><script defer src=https://us.umami.is/script.js data-website-id=c6dbd280-e131-498e-9853-4130e53f5cc6></script>
+<script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><meta name=referrer content="no-referrer-when-downgrade"></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><div id=article-toolbar style=position:sticky;top:5px;z-index:1000><a href=/ class=back-home><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="15 6 9 12 15 18"/></svg><span>返回</span></a></div><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目录</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#如果是有条件的展示view平时的写法>如果是有条件的展示View，平时的写法</a></li></ol></nav></div></section></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><div class=article-title-wrapper><h2 class=article-title><a href=/p/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/>第一篇博客</a></h2><h3 class=article-subtitle>原文： https://www.avanderlee.com/swiftui/conditional-view-modifier/ 如果是有条件的展示View，平时的写法 1 2 3 4 5 6 7 8 9 10 11 12 13 struct ContentView: View { var body: some View { if #available(iOS 14.0, *) { Text("Hello, world!") .padding() } else { /// iOS 13 only Text("Hello, world!") .background(Color.red) // Apply a red color .padding() }</h3></div><header class=article-category><a href=/categories/swiftui/ style=background-color:#2a9d8f;color:#fff>SwiftUI</a></header><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>Jan 18, 2024</time></div><div><svg data-slot="icon" fill="none" stroke-width="1.5" stroke="currentcolor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967.0 006 3.75c-1.052.0-2.062.18-3 .512v14.25A8.987 8.987.0 016 18c2.305.0 4.408.867 6 2.292m0-14.25a8.966 8.966.0 016-2.292c1.052.0 2.062.18 3 .512v14.25A8.987 8.987.0 0018 18a8.967 8.967.0 00-6 2.292m0-14.25v14.25"/></svg><time class="meta-item article-time--reading"><span id=busuanzi_value_page_pv></span></time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--reading>阅读时长: 2 分钟</time></div></footer></div></header><section class=article-content><p>原文： <a class=link href=https://www.avanderlee.com/swiftui/conditional-view-modifier/ target=_blank rel=noopener>https://www.avanderlee.com/swiftui/conditional-view-modifier/</a></p><h2 id=如果是有条件的展示view平时的写法>如果是有条件的展示View，平时的写法</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-swift data-lang=swift><span class=line><span class=cl><span class=kd>struct</span> <span class=nc>ContentView</span><span class=p>:</span> <span class=n>View</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>     <span class=kd>var</span> <span class=nv>body</span><span class=p>:</span> <span class=n>some</span> <span class=n>View</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>         <span class=k>if</span> <span class=cp>#available</span><span class=p>(</span><span class=cp>iOS</span> <span class=mf>14.0</span><span class=p>,</span> <span class=o>*</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>             <span class=n>Text</span><span class=p>(</span><span class=s>&#34;Hello, world!&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>                 <span class=p>.</span><span class=n>padding</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>         <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>             <span class=c1>/// iOS 13 only</span>
+</span></span><span class=line><span class=cl>             <span class=n>Text</span><span class=p>(</span><span class=s>&#34;Hello, world!&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>                 <span class=p>.</span><span class=n>background</span><span class=p>(</span><span class=n>Color</span><span class=p>.</span><span class=n>red</span><span class=p>)</span> <span class=c1>// Apply a red color</span>
+</span></span><span class=line><span class=cl>                 <span class=p>.</span><span class=n>padding</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>         <span class=p>}</span>
+</span></span><span class=line><span class=cl>     <span class=p>}</span>
+</span></span><span class=line><span class=cl> <span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>简化：</p><p><strong>第一次尝试</strong>：添加一个View extension</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-swift data-lang=swift><span class=line><span class=cl><span class=kd>extension</span> <span class=nc>View</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=c1>/// Applies the given transform if the given condition evaluates to `true`.</span>
+</span></span><span class=line><span class=cl>    <span class=c1>/// - Parameters:</span>
+</span></span><span class=line><span class=cl>    <span class=c1>///   - condition: The condition to evaluate.</span>
+</span></span><span class=line><span class=cl>    <span class=c1>///   - transform: The transform to apply to the source `View`.</span>
+</span></span><span class=line><span class=cl>    <span class=c1>/// - Returns: Either the original `View` or the modified `View` if the condition is `true`.</span>
+</span></span><span class=line><span class=cl>    <span class=p>@</span><span class=n>ViewBuilder</span> <span class=kd>func</span> <span class=p>`</span><span class=k>if</span><span class=p>`&lt;</span><span class=n>Content</span><span class=p>:</span> <span class=n>View</span><span class=p>&gt;(</span><span class=kc>_</span> <span class=n>condition</span><span class=p>:</span> <span class=nb>Bool</span><span class=p>,</span> <span class=n>transform</span><span class=p>:</span> <span class=p>(</span><span class=kc>Self</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=n>Content</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=n>some</span> <span class=n>View</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=n>condition</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>transform</span><span class=p>(</span><span class=kc>self</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=kc>self</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-swift data-lang=swift><span class=line><span class=cl><span class=kd>struct</span> <span class=nc>ContentView</span><span class=p>:</span> <span class=n>View</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=kd>var</span> <span class=nv>shouldApplyBackground</span><span class=p>:</span> <span class=nb>Bool</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>guard</span> <span class=cp>#available</span><span class=p>(</span><span class=cp>iOS</span> <span class=mi>14</span><span class=p>,</span> <span class=o>*</span><span class=p>)</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=kc>true</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=kc>false</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=kd>var</span> <span class=nv>body</span><span class=p>:</span> <span class=n>some</span> <span class=n>View</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>Text</span><span class=p>(</span><span class=s>&#34;Hello, world!&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=p>.</span><span class=n>padding</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>            <span class=p>.</span><span class=k>if</span><span class=p>(</span><span class=n>shouldApplyBackground</span><span class=p>)</span> <span class=p>{</span> <span class=n>view</span> <span class=k>in</span>
+</span></span><span class=line><span class=cl>                <span class=c1>// We only apply this background color if shouldApplyBackground is true</span>
+</span></span><span class=line><span class=cl>                <span class=n>view</span><span class=p>.</span><span class=n>background</span><span class=p>(</span><span class=n>Color</span><span class=p>.</span><span class=n>red</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p><strong>第二次尝试</strong>：通过在添加一个<strong>autoclosure</strong> 闭包来返回 if 结果，从而减少属性的添加</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-swift data-lang=swift><span class=line><span class=cl><span class=kd>extension</span> <span class=nc>View</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=c1>/// Applies the given transform if the given condition evaluates to `true`.</span>
+</span></span><span class=line><span class=cl>    <span class=c1>/// - Parameters:</span>
+</span></span><span class=line><span class=cl>    <span class=c1>///   - condition: The condition to evaluate.</span>
+</span></span><span class=line><span class=cl>    <span class=c1>///   - transform: The transform to apply to the source `View`.</span>
+</span></span><span class=line><span class=cl>    <span class=c1>/// - Returns: Either the original `View` or the modified `View` if the condition is `true`.</span>
+</span></span><span class=line><span class=cl>    <span class=p>@</span><span class=n>ViewBuilder</span> <span class=kd>func</span> <span class=p>`</span><span class=k>if</span><span class=p>`&lt;</span><span class=n>Content</span><span class=p>:</span> <span class=n>View</span><span class=p>&gt;(</span><span class=kc>_</span> <span class=n>condition</span><span class=p>:</span> <span class=kr>@autoclosure</span> <span class=p>()</span> <span class=p>-&gt;</span> <span class=nb>Bool</span><span class=p>,</span> <span class=n>transform</span><span class=p>:</span> <span class=p>(</span><span class=kc>Self</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=n>Content</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=n>some</span> <span class=n>View</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=n>condition</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>transform</span><span class=p>(</span><span class=kc>self</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=kc>self</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-swift data-lang=swift><span class=line><span class=cl><span class=kd>struct</span> <span class=nc>ContentView</span><span class=p>:</span> <span class=n>View</span> <span class=p>{</span>    
+</span></span><span class=line><span class=cl>     <span class=kd>var</span> <span class=nv>body</span><span class=p>:</span> <span class=n>some</span> <span class=n>View</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>         <span class=n>Text</span><span class=p>(</span><span class=s>&#34;Hello, world!&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>             <span class=p>.</span><span class=n>padding</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>             <span class=p>.</span><span class=k>if</span><span class=p>({</span>
+</span></span><span class=line><span class=cl>                 <span class=k>if</span> <span class=cp>#available</span><span class=p>(</span><span class=cp>iOS</span> <span class=mi>14</span><span class=p>,</span> <span class=o>*</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>                     <span class=k>return</span> <span class=kc>true</span>
+</span></span><span class=line><span class=cl>                 <span class=p>}</span>
+</span></span><span class=line><span class=cl>                 <span class=k>return</span> <span class=kc>false</span>
+</span></span><span class=line><span class=cl>             <span class=p>}())</span> <span class=p>{</span> <span class=n>view</span> <span class=k>in</span>
+</span></span><span class=line><span class=cl>                 <span class=n>view</span><span class=p>.</span><span class=n>background</span><span class=p>(</span><span class=n>Color</span><span class=p>.</span><span class=n>red</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>             <span class=p>}</span>
+</span></span><span class=line><span class=cl>     <span class=p>}</span>
+</span></span><span class=line><span class=cl> <span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p><strong>第三次的尝试</strong>，也是最优解：可读性高</p><p>继续使用第一次尝试的view Extension，而是将版本的判断添加到了一个Bool值的Extension</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-swift data-lang=swift><span class=line><span class=cl><span class=kd>extension</span> <span class=nc>View</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=c1>/// Applies the given transform if the given condition evaluates to `true`.</span>
+</span></span><span class=line><span class=cl>    <span class=c1>/// - Parameters:</span>
+</span></span><span class=line><span class=cl>    <span class=c1>///   - condition: The condition to evaluate.</span>
+</span></span><span class=line><span class=cl>    <span class=c1>///   - transform: The transform to apply to the source `View`.</span>
+</span></span><span class=line><span class=cl>    <span class=c1>/// - Returns: Either the original `View` or the modified `View` if the condition is `true`.</span>
+</span></span><span class=line><span class=cl>    <span class=p>@</span><span class=n>ViewBuilder</span> <span class=kd>func</span> <span class=p>`</span><span class=k>if</span><span class=p>`&lt;</span><span class=n>Content</span><span class=p>:</span> <span class=n>View</span><span class=p>&gt;(</span><span class=kc>_</span> <span class=n>condition</span><span class=p>:</span> <span class=nb>Bool</span><span class=p>,</span> <span class=n>transform</span><span class=p>:</span> <span class=p>(</span><span class=kc>Self</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=n>Content</span><span class=p>)</span> <span class=p>-&gt;</span> <span class=n>some</span> <span class=n>View</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=n>condition</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>transform</span><span class=p>(</span><span class=kc>self</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=kc>self</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-swift data-lang=swift><span class=line><span class=cl><span class=kd>extension</span> <span class=nc>Bool</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>     <span class=kd>static</span> <span class=kd>var</span> <span class=nv>iOS13</span><span class=p>:</span> <span class=nb>Bool</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>         <span class=k>guard</span> <span class=cp>#available</span><span class=p>(</span><span class=cp>iOS</span> <span class=mi>14</span><span class=p>,</span> <span class=o>*</span><span class=p>)</span> <span class=k>else</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>             <span class=c1>// It&#39;s iOS 13 so return true.</span>
+</span></span><span class=line><span class=cl>             <span class=k>return</span> <span class=kc>true</span>
+</span></span><span class=line><span class=cl>         <span class=p>}</span>
+</span></span><span class=line><span class=cl>         <span class=c1>// It&#39;s iOS 14 so return false.</span>
+</span></span><span class=line><span class=cl>         <span class=k>return</span> <span class=kc>false</span>
+</span></span><span class=line><span class=cl>     <span class=p>}</span>
+</span></span><span class=line><span class=cl> <span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-swift data-lang=swift><span class=line><span class=cl><span class=kd>struct</span> <span class=nc>ContentView</span><span class=p>:</span> <span class=n>View</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kd>var</span> <span class=nv>body</span><span class=p>:</span> <span class=n>some</span> <span class=n>View</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>Text</span><span class=p>(</span><span class=s>&#34;Hello, world!&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=p>.</span><span class=n>padding</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>            <span class=p>.</span><span class=k>if</span><span class=p>(.</span><span class=n>iOS13</span><span class=p>)</span> <span class=p>{</span> <span class=n>view</span> <span class=k>in</span>
+</span></span><span class=line><span class=cl>                <span class=n>view</span><span class=p>.</span><span class=n>background</span><span class=p>(</span><span class=n>Color</span><span class=p>.</span><span class=n>red</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>            <span class=p>}</span>
+</span></span><span class=line><span class=cl>            
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><details><summary>Click to expand!</summary><pre><code> Hidden explanation
+</code></pre></details></section><footer class=article-footer><section class=article-tags><a href=/tags/shortcodes/>shortcodes</a>
+<a href=/tags/privacy/>privacy</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg><span>Licensed under CC BY-NC-SA 4.0</span></section></footer></article><div class=disqus-container><div id=disqus_thread></div><script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//hugo-theme-stack.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><style>.disqus-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding)}</style><script>window.addEventListener("onColorSchemeChange",e=>{typeof DISQUS=="object"&&DISQUS.reset({reload:!0})})</script><footer class=site-footer><section class=totalcount>发表了2篇文章 ·
+总计0.68k字</section><section class=running-time>本站已稳定运行
+<span id=runningdays class=running-days></span></section><section class=busuanzi-footer><span id=busuanzi_container_site_pv>本站总访问量<span id=busuanzi_value_site_pv class=number></span>次</span>
+&nbsp&nbsp
+        <span id=busuanzi_container_site_uv>本站访客数<span id=busuanzi_value_site_uv class=number></span>人次</span></section><section class=copyright>&copy;
+2020 -
+2024 LivenBom Person</section><section class=powerby>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>主题 <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.21.0>Stack</a></b> 由 <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a> 设计</section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script>
+<script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script><script>let s1="2024-1-18";s1=new Date(s1.replace(/-/g,"/"));let s2=new Date,timeDifference=s2.getTime()-s1.getTime(),days=Math.floor(timeDifference/(1e3*60*60*24)),hours=Math.floor(timeDifference%(1e3*60*60*24)/(1e3*60*60)),minutes=Math.floor(timeDifference%(1e3*60*60)/(1e3*60)),result=days+"天"+hours+"小时"+minutes+"分钟";document.getElementById("runningdays").innerHTML=result</script></body></html>
